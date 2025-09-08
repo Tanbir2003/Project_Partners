@@ -84,7 +84,7 @@ const Signup = () => {
               value={input.fullname}
               name="fullname"
               onChange={changeEventHandler}
-              placeholder="Hello"
+              placeholder="Tanbir Ahmed"
               className="w-full p-3 rounded-md border border-gray-300 focus:ring-2 focus:ring-[#6A38C2] transition duration-300"
             />
           </div>
