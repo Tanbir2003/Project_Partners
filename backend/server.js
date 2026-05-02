@@ -12,23 +12,23 @@ import applicationRoute from './routes/application.route.js'
 dotenv.config();
 connectDB();  // made in utils
 
-const app=express();
+const app = express();
 
 app.use(express.json());  //  middleware for coming post data
 app.use(express.urlencoded({ extended: true })); // middleware for coming post data
 app.use(cookieParser());
 
 app.use(
-    cors({
-      origin: [
-        "http://localhost:3000", // Localhost development
-        "https://project-partners-khkm.vercel.app", // Devtunnel URL
-      ],
-      credentials: true, // Required for withCredentials to work
-    })
-  );
+  cors({
+    origin: [
+      "http://localhost:3000", // Localhost development
+      "https://project-partners-97on.vercel.app/", // Devtunnel URL
+    ],
+    credentials: true, // Required for withCredentials to work
+  })
+);
 
-const PORT=process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 // api
 app.get("/", (req, res) => res.send("Express on Vercel"));
@@ -38,7 +38,7 @@ app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
 // ndkj
-app.listen(PORT,()=>{
-    
-    console.log(`Server is running on port ${PORT}`);
+app.listen(PORT, () => {
+
+  console.log(`Server is running on port ${PORT}`);
 });
