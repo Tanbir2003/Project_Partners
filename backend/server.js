@@ -23,7 +23,8 @@ app.use(
     origin: [
       "http://localhost:5173", // Frontend dev server
       "http://localhost:3000", // Localhost development
-      "https://project-partners-382j.vercel.app", // Production
+      "https://project-partners-382j.vercel.app",
+      "https://project-partners-97on.vercel.app",   /// Production
     ],
     credentials: true, // Required for withCredentials to work
   })
