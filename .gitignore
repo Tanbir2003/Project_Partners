@@ -1,3 +1,4 @@
 backend/node_modules
+//Mongo_URI
 backend/.env
 frontend/node_modules
